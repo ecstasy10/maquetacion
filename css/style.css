@@ -1,0 +1,203 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.apart-grid {
+    position: fixed;
+    height: 100%;
+    background-color: white;
+    text-align: center;
+    width: 10em;
+    font-family: 'Roboto';
+}
+
+.apart-grid>h4{
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.apart-grid>h1{
+    font-weight: 900;
+}
+
+.home-grid { 
+    grid-area: main;
+    margin-left: 10em;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.home-grid>.home {
+    padding-top: 0;
+    padding-bottom: 5em;
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-grid>.home>img {
+    padding-top: 9em;
+    width: 7em;
+}
+
+.home-grid>.home>h1 {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+}
+
+.home-grid>.home>h5 {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+}
+
+.home-grid>.home>a {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+}
+
+.home-grid>.contacto {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+    font-size: .6em;
+}
+
+.home-grid>.contacto>h1 {
+    text-align: left;
+    margin-left: 1em;
+}
+
+.home-grid>.contacto>table {
+    width: 100%;
+}
+
+.home-grid>.contacto a {
+    text-decoration: none;
+    color: coral;
+}
+
+.home-grid>.contacto button {
+    margin-top: 1em;
+    background-color: rgb(49, 49, 49);
+    padding: 1em 1em 1em 1em;
+    border-radius: 2em;
+    border: 0;
+    color: white;
+}
+
+.home-grid>.experiencia {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+    font-size: .6em;
+    background-color: rgb(196, 196, 196);
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+.home-grid>.experiencia>table {
+    width: 100%;
+    border-radius: .2em;
+    background-color: rgb(163, 163, 163);
+}
+
+.home-grid>.experiencia>table tr td {
+    padding: .7em;
+    transition: .2s;
+}
+
+.home-grid>.experiencia>table tr td:hover{
+    padding: .7em;
+    background-color: rgb(95, 95, 95);
+}
+
+.home-grid>.portofolio {
+    font-family: 'Roboto';
+    color: rgb(49, 49, 49);
+    font-weight: 400;
+    font-size: .6em;
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+}
+
+.home-grid>.portofolio>.cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.home-grid>.portofolio>.cards>.card {
+    padding: 1em;
+}
+
+.home-grid>.portofolio>.cards>.card>img {
+    width: 15em;
+}
+
+.home-grid>.portofolio>.cards>.card>h3 {
+    color: coral;
+}
+
+.home-grid>.portofolio>.cards>.card>a {
+    color: coral;
+    text-decoration: none;
+}
+
+.footer-grid { 
+    grid-area: footer; 
+    background-color: rgb(45, 75, 114);
+    font-family: 'Roboto';
+    margin-left: 10em;
+    text-align: left;
+}
+
+.footer-grid h1 {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-left: .6em;
+}
+
+.footer-grid table {
+    width: 100%;
+    color: rgb(204, 204, 204);
+    text-align: left;
+    padding-left: 1em;
+    font-size: medium;
+}
+
+.footer-grid a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+.footer-grid button {
+    margin-top: 1em;
+    background-color: rgb(49, 49, 49);
+    padding: 1em 1em 1em 1em;
+    border-radius: 2em;
+    border: 0;
+    color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main main main main main main'
+    'footer footer footer footer footer footer';
+    padding: 0;
+    margin: 0;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
